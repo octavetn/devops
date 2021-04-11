@@ -1,0 +1,13 @@
+<head>
+    <script type="text/javascript">
+        function GetFileInfo() {
+            var message = "The document file was last created at: <b>" + document.lastModified + "</b><br />";
+            var info = document.getElementById("info");
+            info.innerHTML = message;
+        }
+    </script>
+</head>
+
+<body onload="GetFileInfo ();">
+    <div id="info" style="width:500px; overflow:auto; background-color:#e0d0d0;"></div>
+</body>
